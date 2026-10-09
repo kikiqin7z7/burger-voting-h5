@@ -24,9 +24,9 @@ const NOTES = [
   { id: "n3", cover: "assets/note-recommend-bigmac.png", ratio: "3 / 4", title: "我真的推荐你们都来选巨无霸", author: "巨无霸推荐官", avatar: "assets/avatar-02.jpg", likes: 2866, topic: "#巨无霸打投", burger: "bigmac" },
   { id: "n4", cover: "assets/note-04.jpg", ratio: "4 / 5", title: "Pick 你心中最夯的汉堡", author: "汉堡搭子", avatar: "assets/avatar-04.jpg", likes: 9835, topic: "#麦当劳堡王争霸赛", burger: "bigmac" },
   { id: "n5", cover: "assets/note-05.jpg", ratio: "4 / 5", title: "一次测评五款汉堡，我的答案是它", author: "今日吃什么", avatar: "assets/avatar-05.jpg", likes: 15720, topic: "#汉堡大测评", burger: "grilled" },
-  { id: "n6", cover: "assets/note-06.jpg", ratio: "4 / 5", title: "汉堡大测评！我最爱的是……", author: "脆薯不蘸酱", avatar: "assets/avatar-06.jpg", likes: 6655, topic: "#巨无霸", burger: "bigmac" },
+  { id: "n6", cover: "assets/note-pet-vote.png", ratio: "3 / 4", title: "我让我的家宠为我选择麦当劳堡王", author: "家宠堡王派", avatar: "assets/avatar-06.jpg", likes: 6655, topic: "#麦当劳堡王争霸赛", burger: "grilled" },
   { id: "n7", cover: "assets/note-dog-support.png", ratio: "3 / 4", title: "我让我的本命堡为我出战", author: "本命堡后援会", avatar: "assets/avatar-04.jpg", likes: 3421, topic: "#麦当劳堡王争霸赛", burger: "grilled" },
-  { id: "n8", cover: "assets/note-burger-review.png", ratio: "3 / 4", title: "汉堡大测评！我最爱的是……", author: "今日吃堡", avatar: "assets/avatar-01.jpg", likes: 1899, topic: "#汉堡大测评", burger: "bigmac" }
+  { id: "n8", cover: "assets/note-fish-support.png", ratio: "3 / 4", title: "我不许你们忤逆麦香鱼！", author: "麦香鱼守护者", avatar: "assets/avatar-01.jpg", likes: 1899, topic: "#麦香鱼汉堡", burger: "fish" }
 ];
 
 const state = {

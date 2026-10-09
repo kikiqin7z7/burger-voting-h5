@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0df">
+  <meta name="description" content="麦当劳堡王争霸赛静态活动页原型">
+  <link rel="icon" href="data:,">
+  <title>麦当劳堡王争霸赛</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="page-shell">
+    <main id="main">
+      <section class="hero" aria-labelledby="campaign-title">
+        <h1 class="visually-hidden" id="campaign-title">麦当劳堡王争霸赛：投出支持票，让你喜欢的汉堡 C 位出道</h1>
+        <img class="hero-copy-image" src="assets/hero-copy.png" alt="麦当劳堡王争霸赛，距离 11 月 13 日总决赛还有 11 天，谁是你的本命堡？投出支持票，让你喜欢的汉堡 C 位出道" width="940" height="800">
+        <img class="section-art section-art--podium" src="assets/title-podium.png" alt="本命堡打投排名" width="940" height="100">
+
+        <div class="podium" aria-label="当前前三名">
+          <article class="podium-card podium-card--first">
+            <div class="triangle-stage triangle-stage--crown">
+              <img src="assets/burger-spicy.png" alt="麦辣鸡腿堡" width="720" height="720">
+            </div>
+            <div class="podium-score"><b>01</b><span>票数：<strong data-hero-votes="spicy">98765</strong></span></div>
+          </article>
+
+          <article class="podium-card podium-card--second">
+            <div class="triangle-stage triangle-stage--normal">
+              <img src="assets/burger-grilled.png" alt="板烧鸡腿堡" width="720" height="720">
+            </div>
+            <div class="podium-score"><b>02</b><span>票数：86543</span></div>
+          </article>
+
+          <p class="coupon-copy">完成有效投票，冠军揭晓后可领取<strong>5折优惠券</strong></p>
+
+          <article class="podium-card podium-card--third">
+            <div class="triangle-stage triangle-stage--normal">
+              <img src="assets/burger-bigmac.png" alt="巨无霸" width="720" height="720">
+            </div>
+            <div class="podium-score"><b>03</b><span>票数：72345</span></div>
+          </article>
+        </div>
+
+        <img class="hero-cta-image" src="assets/hero-cta.png" alt="想让你的汉堡 C 位出道！欢迎你的打投！" width="940" height="200">
+        <a class="scroll-cue" href="#ranking" aria-label="查看实时排行榜">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </a>
+      </section>
+
+      <section class="ranking content-section" id="ranking" aria-labelledby="ranking-title">
+        <header class="section-heading">
+          <h2 id="ranking-title"><img src="assets/title-ranking.png" alt="实时排行榜" width="940" height="100"></h2>
+          <p>按照用户喜爱票数排序 · 实时更新</p>
+        </header>
+        <div class="ranking-list" id="burger-list"></div>
+      </section>
+
+      <section class="tasks content-section" id="tasks" aria-labelledby="tasks-title">
+        <header class="section-heading">
+          <h2 id="tasks-title"><img src="assets/title-rules.png" alt="投票规则" width="940" height="100"></h2>
+          <p>每天 00:00 刷新任务</p>
+        </header>
+
+        <div class="ticket-balance" aria-live="polite">
+          <span>当前票数</span>
+          <strong id="ticket-count">0</strong>
+          <small>完成任务获取支持票</small>
+        </div>
+        <div class="task-list" id="task-list"></div>
+      </section>
+
+      <section class="notes content-section" id="notes" aria-labelledby="notes-title">
+        <header class="section-heading section-heading--notes">
+          <h2 id="notes-title"><img src="assets/title-notes.png" alt="本命堡安利现场" width="940" height="100"></h2>
+          <p>看看大家都在 Pick 谁</p>
+        </header>
+        <div class="note-grid" id="note-grid"></div>
+      </section>
+    </main>
+
+    <a class="side-jump" href="#tasks">下滑投票</a>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="like-burst" id="like-burst" aria-hidden="true">
+      <span class="like-burst__ring"></span>
+      <span class="like-burst__spark like-burst__spark--one"></span>
+      <span class="like-burst__spark like-burst__spark--two"></span>
+      <span class="like-burst__spark like-burst__spark--three"></span>
+      <span class="like-burst__spark like-burst__spark--four"></span>
+      <img id="like-burger" src="assets/burger-spicy.png" alt="" width="720" height="720">
+      <strong>喜欢 +1</strong>
+    </div>
+
+    <div class="support-modal" id="support-modal" role="dialog" aria-modal="true" aria-labelledby="support-modal-title" hidden>
+      <div class="support-modal__backdrop" data-support-close></div>
+      <div class="support-modal__panel" role="document">
+        <div class="confetti" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="support-modal__eyebrow">本命堡应援成功</p>
+        <h2 class="visually-hidden" id="support-modal-title">已为本命汉堡投出支持票</h2>
+        <img class="support-card-image" id="support-card-image" src="assets/card-spicy.png" alt="" width="1086" height="1448">
+        <button class="support-modal__close" type="button" data-support-close aria-label="关闭应援卡">×</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

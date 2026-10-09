@@ -21,12 +21,12 @@ const TASKS = [
 const NOTES = [
   { id: "n1", cover: "assets/note-01.jpg", ratio: "4 / 5", title: "这个麦辣鸡腿堡真的巨好吃！", author: "热辣汉堡研究员", avatar: "assets/avatar-01.jpg", likes: 8294, topic: "#世堡一麦辣鸡腿堡", burger: "spicy" },
   { id: "n2", cover: "assets/note-02.jpg", ratio: "4 / 5", title: "我最爱双层吉士汉堡，快给我家汉堡投票", author: "一口双层快乐", avatar: "assets/avatar-03.jpg", likes: 4317, topic: "#双层吉士出道", burger: "double-cheese" },
-  { id: "n3", cover: "assets/note-03.jpg", ratio: "4 / 5", title: "双层吉士真的太香了，奶酪脑袋集合", author: "芝士加倍", avatar: "assets/avatar-02.jpg", likes: 2866, topic: "#双层吉士汉堡", burger: "double-cheese" },
+  { id: "n3", cover: "assets/note-recommend-bigmac.png", ratio: "3 / 4", title: "我真的推荐你们都来选巨无霸", author: "巨无霸推荐官", avatar: "assets/avatar-02.jpg", likes: 2866, topic: "#巨无霸打投", burger: "bigmac" },
   { id: "n4", cover: "assets/note-04.jpg", ratio: "4 / 5", title: "Pick 你心中最夯的汉堡", author: "汉堡搭子", avatar: "assets/avatar-04.jpg", likes: 9835, topic: "#麦当劳堡王争霸赛", burger: "bigmac" },
   { id: "n5", cover: "assets/note-05.jpg", ratio: "4 / 5", title: "一次测评五款汉堡，我的答案是它", author: "今日吃什么", avatar: "assets/avatar-05.jpg", likes: 15720, topic: "#汉堡大测评", burger: "grilled" },
   { id: "n6", cover: "assets/note-06.jpg", ratio: "4 / 5", title: "汉堡大测评！我最爱的是……", author: "脆薯不蘸酱", avatar: "assets/avatar-06.jpg", likes: 6655, topic: "#巨无霸", burger: "bigmac" },
-  { id: "n7", cover: "assets/note-01.jpg", ratio: "4 / 5", title: "麦辣鸡腿堡党今天也在认真拉票", author: "辣堡后援会", avatar: "assets/avatar-04.jpg", likes: 3421, topic: "#世堡一麦辣鸡腿堡", burger: "spicy" },
-  { id: "n8", cover: "assets/note-05.jpg", ratio: "4 / 5", title: "麦香鱼是懂温柔派汉堡的", author: "海盐气泡", avatar: "assets/avatar-01.jpg", likes: 1899, topic: "#麦香鱼汉堡", burger: "fish" }
+  { id: "n7", cover: "assets/note-dog-support.png", ratio: "3 / 4", title: "我让我的本命堡为我出战", author: "本命堡后援会", avatar: "assets/avatar-04.jpg", likes: 3421, topic: "#麦当劳堡王争霸赛", burger: "grilled" },
+  { id: "n8", cover: "assets/note-burger-review.png", ratio: "3 / 4", title: "汉堡大测评！我最爱的是……", author: "今日吃堡", avatar: "assets/avatar-01.jpg", likes: 1899, topic: "#汉堡大测评", burger: "bigmac" }
 ];
 
 const state = {

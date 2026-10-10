@@ -336,6 +336,8 @@ img {
   object-fit: contain;
 }
 
+.triangle-stage--crown img { transform: translateX(8px); }
+
 .podium-score {
   display: flex;
   align-items: center;
